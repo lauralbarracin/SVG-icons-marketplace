@@ -34,6 +34,15 @@ body
     border: 2px solid grey;
 }
 
+#logo:hover {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(233, 232, 232);
+    transition: background color 4s ease-in;
+}
+
+
 #search
 {
     width: 75%;
@@ -44,6 +53,15 @@ body
     font-size: 20px;
     border: 2px solid grey;
     border-left: none;
+}
+
+#search:hover
+{ 
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(233, 232, 232);
+    transition: background color 4s ease-in; 
 }
 
 #searchIcon
@@ -97,10 +115,67 @@ button
     font-size: 15px;
     font-family: DIN alternate, sans-serif;
     text-align: center;
-    background-color: transparent;
-    border: 1px solid grey;
+    display: block;
+    text-decoration-color: aliceblue;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(233, 232, 232);
     padding: 10px;
-    transition: 0.2s;
+    transition: background 2s ease-in,
+                color 1s;
+}
+
+
+#downloadOpt h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    opacity: 0.5;
+    display: block;
+    padding: 20px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(233, 232, 232);
+    transition: background color 4s ease-in;
+}
+
+.menu a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+   
+.menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.menu a span {
+    transition: transform 0.2s ease-out;
+}
+   
+.menu a:hover span:first-child {
+    transform: translateY(100%);
+}
+   
+.menu a:hover span:last-child {
+    transform: none;
 }
 
 /*icons*/
